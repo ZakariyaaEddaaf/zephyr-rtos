@@ -1,1 +1,1 @@
-# zephyr-rtos
+# zephyr-rtos-proj
