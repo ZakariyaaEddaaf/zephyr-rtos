@@ -1,0 +1,58 @@
+{
+    "zephyr-workbench.westWorkspace.applications": [
+        {
+            "build.configurations": [
+                {
+                    "name": "primary",
+                    "board": "samc21n_xpro",
+                    "active": "true"
+                }
+            ],
+            "toolchain": "zephyr",
+            "sdk": "${workspaceFolder}/../../../zephyr-sdk-1.0.1",
+            "intellisense.provider": "cpptools",
+            "path": "applications/hello_world"
+        },
+        {
+            "build.configurations": [
+                {
+                    "name": "primary",
+                    "board": "samc21n_xpro",
+                    "active": "true"
+                }
+            ],
+            "toolchain": "zephyr",
+            "sdk": "global",
+            "intellisense.provider": "cpptools",
+            "path": "applications/blinky"
+        },
+        {
+            "build.configurations": [
+                {
+                    "name": "primary",
+                    "board": "samc21n_xpro",
+                    "active": "true"
+                }
+            ],
+            "toolchain": "zephyr",
+            "sdk": "global",
+            "intellisense.provider": "cpptools",
+            "path": "applications/samc21_st30tse758_sensor"
+        },
+        {
+            "build.configurations": [
+                {
+                    "name": "primary",
+                    "board": "samc21j_little_brain",
+                    "active": "true"
+                }
+            ],
+            "toolchain": "zephyr",
+            "sdk": "global",
+            "intellisense.provider": "cpptools",
+            "path": "applications/little_brain"
+        }
+    ],
+    "terminal.integrated.stickyScroll.enabled": false,
+    "zephyr-workbench.westWorkspace.selectedApplication": "applications/little_brain"
+}

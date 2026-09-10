@@ -1,0 +1,21 @@
+/{
+	aliases {
+		led0 = &led0;
+		led1 = &led1;
+
+	};
+
+	leds {
+		compatible = "gpio-leds";
+
+		led0: led_0 {
+			gpios = <&porta 15 GPIO_ACTIVE_LOW>;
+			label = "External LED";
+		};
+
+		led1: led_1 {
+			gpios = <&portb 12 GPIO_ACTIVE_LOW>;
+			label = "add on led";
+		};
+	};
+};

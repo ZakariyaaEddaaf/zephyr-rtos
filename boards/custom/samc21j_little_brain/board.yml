@@ -1,0 +1,6 @@
+board:
+  name: samc21j_little_brain
+  full_name: SAM C21J MCU Little brain
+  vendor: custom
+  socs:
+    - name: samc21n18a
