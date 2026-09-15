@@ -10,4 +10,5 @@ project(little_brain)
 target_sources(app PRIVATE
     src/main.c
     src/led_utils.c
+    src/switch_utils.c
     )
