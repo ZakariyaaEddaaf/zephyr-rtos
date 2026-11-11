@@ -1,19 +1,17 @@
 #include <dt-bindings/pinctrl/same51g-pinctrl.h>
 
 &pinctrl {
-	/* Console UART: SERCOM5, PB02 = TX (PAD0), PB03 = RX (PAD1) */
-	sercom5_uart_default: sercom5_uart_default {
+	sercom1_uart_default: sercom1_uart_default {
 		group1 {
-			pinmux = <PB2D_SERCOM5_PAD0>,
-				 <PB3D_SERCOM5_PAD1>;
+			pinmux = <PA16C_SERCOM1_PAD0>,
+				 <PA17C_SERCOM1_PAD1>;
 		};
 	};
 
-	/* I2C to LTC4281: SERCOM2, PA12 = SDA (PAD0), PA13 = SCL (PAD1) */
-	sercom2_i2c_default: sercom2_i2c_default {
+	sercom0_i2c_default: sercom0_i2c_default {
 		group1 {
-			pinmux = <PA12C_SERCOM2_PAD0>,
-				 <PA13C_SERCOM2_PAD1>;
+			pinmux = <PA8C_SERCOM0_PAD0>,
+				 <PA9C_SERCOM0_PAD1>;
 		};
 	};
 };
