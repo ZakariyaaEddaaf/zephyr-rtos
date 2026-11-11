@@ -14,4 +14,11 @@
 				 <PA9C_SERCOM0_PAD1>;
 		};
 	};
+
+	adc0_default: adc0_default {
+		group1 {
+			pinmux = <PA4B_ADC0_AIN4>,
+				 <PA5B_ADC0_AIN5>;
+		};
+	};
 };
