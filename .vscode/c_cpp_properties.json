@@ -3,7 +3,7 @@
     {
       "name": "Zephyr Workbench",
       "compileCommands": [
-        "${workspaceFolder}/applications/little_brain/build/primary/compile_commands.json"
+        "${workspaceFolder}/applications/ltc4281-hotswap-controller/build/primary/compile_commands.json"
       ],
       "compilerPath": "${workspaceFolder}/../../../zephyr-sdk-1.0.1/gnu/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc"
     }

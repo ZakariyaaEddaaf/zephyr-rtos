@@ -51,8 +51,21 @@
             "sdk": "global",
             "intellisense.provider": "cpptools",
             "path": "applications/little_brain"
+        },
+        {
+            "build.configurations": [
+                {
+                    "name": "primary",
+                    "board": "same54_xpro",
+                    "active": "true"
+                }
+            ],
+            "toolchain": "zephyr",
+            "sdk": "global",
+            "intellisense.provider": "cpptools",
+            "path": "applications/ltc4281-hotswap-controller"
         }
     ],
     "terminal.integrated.stickyScroll.enabled": false,
-    "zephyr-workbench.westWorkspace.selectedApplication": "applications/little_brain"
+    "zephyr-workbench.westWorkspace.selectedApplication": "applications/ltc4281-hotswap-controller"
 }

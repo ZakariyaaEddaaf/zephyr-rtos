@@ -1,0 +1,6 @@
+board:
+  name: same51j_hotswap_controller
+  full_name: LTC4281 Hot Swap Controller
+  vendor: custom
+  socs:
+    - name: same51j19a
