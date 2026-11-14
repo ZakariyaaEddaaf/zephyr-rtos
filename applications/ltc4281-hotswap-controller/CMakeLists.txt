@@ -8,6 +8,8 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 project(ltc4281_hotswap_controller)
 
 target_sources(app PRIVATE 
-    src/main.c 
+    src/main.cpp
     src/adc_utils.c
+    src/tmp101_utils.c
+    src/hotswap_controller.cpp
 )
