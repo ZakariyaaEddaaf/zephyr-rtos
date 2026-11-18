@@ -44,10 +44,9 @@
 	zephyr,user {
 		io-channels = <&adc0 4>, <&adc0 5>;
 		io-channel-names = "vin", "vout";
-		hs-on-gpios = <&porta 12 GPIO_ACTIVE_HIGH>;
 		cfg-gpios = <&porta 15 GPIO_ACTIVE_HIGH>,   /* CFG0 */
-			    <&porta 14 GPIO_ACTIVE_HIGH>,   /* CFG1 */
-			    <&porta 13 GPIO_ACTIVE_HIGH>;   /* CFG2 */
+					<&porta 14 GPIO_ACTIVE_HIGH>,   /* CFG1 */
+					<&porta 13 GPIO_ACTIVE_HIGH>;   /* CFG2 */
 	};
 };
 
@@ -77,6 +76,14 @@
 	tmp101: tmp101@4a {
 		compatible = "lm75";
 		reg = <0x4a>;
+	};
+
+	ltc4281: ltc4281@45 {
+		compatible = "adi,ltc4281";
+		reg = <0x45>;
+		alert-gpios = <&portb 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+		on-gpios = <&porta 12 GPIO_ACTIVE_HIGH>;
+		wp-gpios = <&portb 11 GPIO_ACTIVE_HIGH>;
 	};
 };
 

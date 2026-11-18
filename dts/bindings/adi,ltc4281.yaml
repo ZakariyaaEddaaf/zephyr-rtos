@@ -1,0 +1,18 @@
+description: Analog Devices LTC4281 hot swap controller with I2C monitoring
+
+compatible: "adi,ltc4281"
+
+include: i2c-device.yaml
+
+properties:
+  alert-gpios:
+    type: phandle-array
+    description: ALERT pin (open-drain, active low)
+
+  on-gpios:
+    type: phandle-array
+    description: MCU pin driving the ON input (HS_ON)
+  
+  wp-gpios:
+    type: phandle-array
+    description: MCU pin driving the WP input (HS_WP)
